@@ -14,31 +14,29 @@ Dirancang khusus untuk mempermudah tugas pengelola LPSE, PPK, Pokja Pemilihan, A
 
 ---
 
-## Unduhan Rilis Resmi (Versi 0.2.0)
+## Unduhan Rilis Resmi (Versi 0.5.0)
 
 Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windows (64-bit):
 
 | Nama Berkas | Tipe Paket | Keterangan | Tautan Unduhan Langsung |
 | :--- | :--- | :--- | :--- |
-| **INAPROC.Exporter_0.2.0_x64-setup.exe** | Installer Wizard *(Direkomendasikan)* | Instalasi resmi dengan shortcut desktop & uninstaller | [Unduh Installer](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.2.0/INAPROC.Exporter_0.2.0_x64-setup.exe) |
-| **INAPROC.Exporter_0.2.0_x64.msi** | Windows MSI Installer | Paket instalasi standar Windows MSI | [Unduh MSI](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.2.0/INAPROC.Exporter_0.2.0_x64.msi) |
-| **INAPROC.Exporter.exe** | Standalone Portable | Berkas portabel mandiri, langsung jalankan tanpa instalasi | [Unduh Portable](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.2.0/INAPROC.Exporter.exe) |
+| **INAPROC.Exporter_0.5.0_x64-setup.exe** | Installer Wizard *(Direkomendasikan)* | Instalasi resmi dengan shortcut desktop & uninstaller | [Unduh Installer](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.5.0/INAPROC.Exporter_0.5.0_x64-setup.exe) |
+| **INAPROC.Exporter_0.5.0_x64.msi** | Windows MSI Installer | Paket instalasi standar Windows MSI | [Unduh MSI](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.5.0/INAPROC.Exporter_0.5.0_x64.msi) |
+| **INAPROC.Exporter.exe** | Standalone Portable | Berkas portabel mandiri, langsung jalankan tanpa instalasi | [Unduh Portable](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.5.0/INAPROC.Exporter.exe) |
 
 > Seluruh riwayat pembaruan dan rilis sebelumnya dapat dilihat melalui halaman [GitHub Releases](https://github.com/yogijowo/inaproc-desktop-releases/releases).
 
 ---
 
-## Catatan Rilis & Fitur Baru (Versi 0.2.0)
+## Catatan Rilis & Fitur Baru (Versi 0.5.0)
 
-- **Engine Baru Tauri v2 & Rust**: Migrasi total dari arsitektur lama ke engine native Rust. Ukuran berkas sangat ringkas, startup instan, dan penggunaan RAM sangat rendah (< 50 MB).
-- **Native HTTP Gateway Client**: Mengatasi kendala CORS pada browser/WebView2 secara langsung melalui native HTTP client di sisi Rust (`ureq` + TLS).
-- **Desain Antarmuka Light Theme Modern**: Tampilan bersih dan rapi dengan aksen warna Crimson Rose (`#d22b50`) yang nyaman di mata.
-- **Relasi Cerdas E-Purchasing**:
-  - Pada endpoint *List Produk Penyedia* dan *Detail Penyedia*, pengguna dapat memilih mode **Otomatis dari E-Purchasing** (aplikasi secara cerdas mengumpulkan daftar penyedia unik dari paket e-purchasing pada tahun anggaran berjalan) atau memilih **Input Manual**.
-- **Filter Kode Tender Fleksibel**:
-  - Pada endpoint *Pengumuman Tender (SPSE)*, pengguna dapat memasukkan kode tender tertentu atau mengosongkan untuk menarik seluruh pengumuman tender pada KLPD dan tahun tersebut.
-- **Penyimpanan Lokal SQLite**:
-  - Konfigurasi KLPD, Token API, Folder Penyimpanan default, dan Riwayat Ekspor tersimpan rapi di database lokal SQLite komputer Anda.
+- **Kotak Pencarian Cepat (Live Search)**: Menyaring daftar modul data secara instan saat mengetik nama modul atau endpoint.
+- **Opsi Gabung 1 Berkas Excel (Multi-Sheet)**: Kemampuan menggabungkan banyak modul yang dipilih ke dalam satu file `.xlsx` dengan sheet terpisah yang rapi (nama sheet dibatasi 31 karakter dan dibersihkan dari karakter ilegal).
+- **Aksi 1-Klik di Riwayat Ekspor**: Tombol *Buka* (langsung membuka file di Excel) dan *Folder* (langsung menyorot file di Windows Explorer).
+- **Pengaturan Batas Sampel Relasi Penyedia**: Pilihan fleksibel untuk membatasi kueri penyedia unik (50 sampel cepat, 100, 250, 500, atau semua ~1.600).
+- **Tombol Batalkan Ekspor**: Penghentian proses ekspor secara aman dan seketika dari header panel progres.
+- **Pemeriksaan Pembaruan Otomatis**: Aplikasi secara otomatis mendeteksi dan memberi notifikasi saat rilis versi baru tersedia di GitHub.
+- **Perlindungan Limit Karakter Excel**: Pemotongan aman otomatis sel teks yang melebihi batas 32.767 karakter Microsoft Excel agar SheetJS tidak pernah mengalami crash.
 
 ---
 
