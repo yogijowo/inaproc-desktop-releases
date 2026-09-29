@@ -46,7 +46,7 @@ Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windo
 
 Paket installer menyediakan integrasi penuh ke dalam sistem Windows, termasuk shortcut di Desktop dan Start Menu serta uninstaller resmi.
 
-1. Unduh berkas `INAPROC.Exporter_0.2.0_x64-setup.exe` melalui tautan di atas.
+1. Unduh berkas `INAPROC.Exporter_0.5.0_x64-setup.exe` melalui tautan di atas.
 2. Klik ganda berkas installer yang telah diunduh.
 3. Apabila muncul peringatan keamanan **Windows SmartScreen** (*Windows protected your PC*):
    - Klik teks **More info** atau **Info selengkapnya**.
