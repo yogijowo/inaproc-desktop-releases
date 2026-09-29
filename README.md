@@ -10,7 +10,7 @@ Dirancang khusus untuk mempermudah tugas pengelola LPSE, PPK, Pokja Pemilihan, A
 
 ## Antarmuka Aplikasi
 
-![Antarmuka Aplikasi INAPROC Exporter v0.2.0](image/cover.png)
+![Antarmuka Aplikasi INAPROC Exporter v0.5.0](image/image.png)
 
 ---
 
@@ -36,7 +36,7 @@ Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windo
 - **Pengaturan Batas Sampel Relasi Penyedia**: Pilihan fleksibel untuk membatasi kueri penyedia unik (50 sampel cepat, 100, 250, 500, atau semua ~1.600).
 - **Tombol Batalkan Ekspor**: Penghentian proses ekspor secara aman dan seketika dari header panel progres.
 - **Pemeriksaan Pembaruan Otomatis**: Aplikasi secara otomatis mendeteksi dan memberi notifikasi saat rilis versi baru tersedia di GitHub.
-- **Perlindungan Limit Karakter Excel**: Pemotongan aman otomatis sel teks yang melebihi batas 32.767 karakter Microsoft Excel agar SheetJS tidak pernah mengalami crash.
+- **Perlindungan Limit Karakter Excel**: Pemotongan aman otomatis sel teks yang melebihi batas karakter Microsoft Excel agar SheetJS tidak pernah mengalami crash.
 
 ---
 
