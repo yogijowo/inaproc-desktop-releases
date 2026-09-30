@@ -10,7 +10,7 @@ Dirancang khusus untuk mempermudah tugas pengelola LPSE, PPK, Pokja Pemilihan, A
 
 ## Antarmuka Aplikasi
 
-![Antarmuka Aplikasi INAPROC Exporter v0.7.1](image/image.png)
+![Antarmuka Aplikasi INAPROC Exporter v0.7.1](image/image-0.7.1.png)
 
 ---
 
