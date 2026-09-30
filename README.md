@@ -2,7 +2,7 @@
 
 Pusat Distribusi Resmi dan Berkas Instalasi Aplikasi Desktop INAPROC Exporter (Windows).
 
-Aplikasi utilitas desktop berbasis Windows yang ditenagai engine native **Rust (Tauri v2)** untuk mengekstraksi, memformat, dan mengekspor data pengadaan barang dan jasa pemerintah secara langsung dari Gateway API resmi INAPROC (LKPP) ke dalam berbagai format file: **Microsoft Excel (.xlsx)**, **CSV (.csv)**, **JSON (.json)**, dan **SQL Dump (.sql)**.
+Aplikasi utilitas desktop berbasis Windows yang ditenagai engine native **Rust (Tauri v2)** untuk mengekstraksi, memformat, menganalisis, dan mengekspor data pengadaan barang dan jasa pemerintah secara langsung dari Gateway API resmi INAPROC (LKPP) ke dalam berbagai format file: **Microsoft Excel (.xlsx)**, **CSV (.csv)**, **JSON (.json)**, dan **SQL Dump (.sql)**.
 
 Dirancang khusus untuk mempermudah tugas pengelola LPSE, PPK, Pokja Pemilihan, Auditor Pengadaan, dan Analis Kebijakan di lingkungan Pemerintah Daerah, Kementerian, dan Lembaga Negara dengan performa tinggi dan konsumsi memori yang sangat efisien (< 50 MB RAM).
 
@@ -10,33 +10,33 @@ Dirancang khusus untuk mempermudah tugas pengelola LPSE, PPK, Pokja Pemilihan, A
 
 ## Antarmuka Aplikasi
 
-![Antarmuka Aplikasi INAPROC Exporter v0.5.0](image/image.png)
+![Antarmuka Aplikasi INAPROC Exporter v0.7.1](image/image.png)
 
 ---
 
-## Unduhan Rilis Resmi (Versi 0.5.0)
+## Unduhan Rilis Resmi (Versi 0.7.1)
 
 Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windows (64-bit):
 
 | Nama Berkas | Tipe Paket | Keterangan | Tautan Unduhan Langsung |
 | :--- | :--- | :--- | :--- |
-| **INAPROC.Exporter_0.5.0_x64-setup.exe** | Installer Wizard *(Direkomendasikan)* | Instalasi resmi dengan shortcut desktop & uninstaller | [Unduh Installer](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.5.0/INAPROC.Exporter_0.5.0_x64-setup.exe) |
-| **INAPROC.Exporter_0.5.0_x64.msi** | Windows MSI Installer | Paket instalasi standar Windows MSI | [Unduh MSI](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.5.0/INAPROC.Exporter_0.5.0_x64.msi) |
-| **INAPROC.Exporter.exe** | Standalone Portable | Berkas portabel mandiri, langsung jalankan tanpa instalasi | [Unduh Portable](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.5.0/INAPROC.Exporter.exe) |
+| **INAPROC.Exporter_0.7.1_x64-setup.exe** | Installer Wizard *(Direkomendasikan)* | Instalasi resmi dengan shortcut desktop & uninstaller | [Unduh Installer](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.7.1/INAPROC.Exporter_0.7.1_x64-setup.exe) |
+| **INAPROC.Exporter_0.7.1_x64.msi** | Windows MSI Installer | Paket instalasi standar Windows MSI | [Unduh MSI](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.7.1/INAPROC.Exporter_0.7.1_x64.msi) |
+| **INAPROC.Exporter.exe** | Standalone Portable | Berkas portabel mandiri, langsung jalankan tanpa instalasi | [Unduh Portable](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v0.7.1/INAPROC.Exporter.exe) |
 
 > Seluruh riwayat pembaruan dan rilis sebelumnya dapat dilihat melalui halaman [GitHub Releases](https://github.com/yogijowo/inaproc-desktop-releases/releases).
 
 ---
 
-## Catatan Rilis & Fitur Baru (Versi 0.5.0)
+## Catatan Rilis & Fitur Baru (Versi 0.7.1)
 
-- **Kotak Pencarian Cepat (Live Search)**: Menyaring daftar modul data secara instan saat mengetik nama modul atau endpoint.
-- **Opsi Gabung 1 Berkas Excel (Multi-Sheet)**: Kemampuan menggabungkan banyak modul yang dipilih ke dalam satu file `.xlsx` dengan sheet terpisah yang rapi (nama sheet dibatasi 31 karakter dan dibersihkan dari karakter ilegal).
-- **Aksi 1-Klik di Riwayat Ekspor**: Tombol *Buka* (langsung membuka file di Excel) dan *Folder* (langsung menyorot file di Windows Explorer).
-- **Pengaturan Batas Sampel Relasi Penyedia**: Pilihan fleksibel untuk membatasi kueri penyedia unik (50 sampel cepat, 100, 250, 500, atau semua ~1.600).
-- **Tombol Batalkan Ekspor**: Penghentian proses ekspor secara aman dan seketika dari header panel progres.
-- **Pemeriksaan Pembaruan Otomatis**: Aplikasi secara otomatis mendeteksi dan memberi notifikasi saat rilis versi baru tersedia di GitHub.
-- **Perlindungan Limit Karakter Excel**: Pemotongan aman otomatis sel teks yang melebihi batas karakter Microsoft Excel agar SheetJS tidak pernah mengalami crash.
+- **Tab Switcher Analitik (Pagu vs Paket)**: Pilihan mode analitik di header Dashboard untuk beralih instan antara **Berdasarkan Pagu (Nilai Rupiah)** dan **Berdasarkan Paket (Jumlah Paket)**.
+- **Tampilan Nilai & Persentase Langsung**: Seluruh grafik (donut chart, stacked bar, gauge) langsung menampilkan nominal/kuantitas dan persentase (%) tanpa harus mengarahkan kursor (*hover*).
+- **Donut Chart Center Total**: Bagian tengah lingkaran donat langsung menampilkan tulisan `TOTAL` beserta nilai agregatnya.
+- **100% Stacked Bar Labels**: Angka Pagu/Target langsung tampil di atas setiap batang grafik dan rincian nominal/paket + persentase langsung tercetak di dalam tiap segmen warna.
+- **Tabel Realisasi Satker / OPD Adaptif**: Header kolom, format angka, dan pengurutan (*sorting*) otomatis beralih antara nilai pagu dan kuantitas paket dengan pencarian instan (*live search*).
+- **Offline Caching SQLite**: Data dashboard tersimpan otomatis secara lokal per kode KLPD dan tahun anggaran sehingga dapat dilihat kapan saja tanpa koneksi internet.
+- **Arsitektur Modular**: Pemisahan modul dashboard ke `dashboard.js` untuk stabilitas dan pemeliharaan kode yang lebih baik.
 
 ---
 
@@ -46,7 +46,7 @@ Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windo
 
 Paket installer menyediakan integrasi penuh ke dalam sistem Windows, termasuk shortcut di Desktop dan Start Menu serta uninstaller resmi.
 
-1. Unduh berkas `INAPROC.Exporter_0.5.0_x64-setup.exe` melalui tautan di atas.
+1. Unduh berkas `INAPROC.Exporter_0.7.1_x64-setup.exe` melalui tautan di atas.
 2. Klik ganda berkas installer yang telah diunduh.
 3. Apabila muncul peringatan keamanan **Windows SmartScreen** (*Windows protected your PC*):
    - Klik teks **More info** atau **Info selengkapnya**.
@@ -109,7 +109,12 @@ Untuk menjaga keamanan kredensial instansi, aplikasi tidak memuat Kode KLPD maup
 
 Aplikasi mendukung endpoint Gateway INAPROC LKPP yang terbagi dalam modul-modul berikut:
 
-### 1. Modul Tender (15 Endpoint Aktif)
+### 1. Modul Dashboard & Analitik (Interaktif)
+- **Perencanaan Pengadaan**: Belanja Pengadaan, Total RUP, % Pengisian RUP, Penyedia vs Swakelola, PDN vs Impor, UMKK vs Non-UMKK, Metode Pemilihan (Donut), Jenis Pengadaan (Donut).
+- **Realisasi Pengadaan**: Total Realisasi, Pembagian Pemilihan vs Kontrak, Capaian Penyedia & Swakelola, Metode Pemilihan Realisasi (Donut), Jenis Pengadaan Realisasi (Donut), 100% Stacked Bar Metode & Jenis, Gauges UMKK & PDN.
+- **Tabel Satker / OPD**: Rincian realisasi tiap perangkat daerah lengkap dengan status performa dan live search.
+
+### 2. Modul Tender (15 Endpoint Aktif)
 - Jadwal Tahapan Non-Tender
 - Jadwal Tahapan Tender
 - Rekapitulasi eKontrak
@@ -126,7 +131,7 @@ Aplikasi mendukung endpoint Gateway INAPROC LKPP yang terbagi dalam modul-modul 
 - Realisasi E-Purchasing
 - Rincian Paket Tender
 
-### 2. Modul RUP (9 Endpoint Aktif)
+### 3. Modul RUP (9 Endpoint Aktif)
 - Master Satuan Kerja (Satker)
 - Paket Anggaran Penyedia
 - Paket Anggaran Swakelola
@@ -137,21 +142,18 @@ Aplikasi mendukung endpoint Gateway INAPROC LKPP yang terbagi dalam modul-modul 
 - Daftar Paket Swakelola
 - Riwayat Kaji Ulang RUP
 
-### 3. Modul E-Katalog (4 Endpoint Aktif)
+### 4. Modul E-Katalog (4 Endpoint Aktif)
 - Daftar Paket E-Purchasing Versi 6
 - Detail Informasi Penyedia Katalog (dengan opsi relasi E-Purchasing otomatis)
 - Daftar Produk Penyedia Katalog (dengan opsi relasi E-Purchasing otomatis)
 - Daftar Kategori Produk Katalog
 
-### 4. Modul E-Katalog Archive (5 Endpoint Aktif)
+### 5. Modul E-Katalog Archive (5 Endpoint Aktif)
 - Paket E-Purchasing Arsip
 - Instansi dan Satuan Kerja Arsip
 - Detail Komoditas Arsip
 - Detail Penyedia Arsip
 - Detail Distributor Arsip
-
-### 5. Modul Dashboard (31 Endpoint - Status: Ditangguhkan)
-Modul dashboard statistik saat ini dinonaktifkan sementara dari antarmuka karena masih dalam tahap pengujian integrasi gateway.
 
 ---
 
