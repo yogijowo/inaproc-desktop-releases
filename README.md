@@ -1,8 +1,8 @@
-# INAPROC Desktop Exporter
+# INAPROC Exporter
 
 Pusat Distribusi Resmi dan Berkas Instalasi Aplikasi Desktop INAPROC Exporter (Windows).
 
-Aplikasi utilitas desktop berbasis Windows yang ditenagai engine native Rust (Tauri v2) untuk mengekstraksi, memformat, menganalisis, mengaudit kepatuhan, dan mengekspor data pengadaan barang dan jasa pemerintah secara langsung dari Gateway API resmi INAPROC (LKPP) ke dalam berbagai format file: Microsoft Excel (.xlsx), CSV (.csv), JSON (.json), dan SQL Dump (.sql).
+Aplikasi utilitas desktop berbasis Windows untuk mengekstraksi, memformat, menganalisis, mengaudit kepatuhan, dan mengekspor data pengadaan barang dan jasa pemerintah secara langsung dari Gateway API resmi INAPROC (LKPP) ke dalam berbagai format file: Microsoft Excel (.xlsx), CSV (.csv), JSON (.json), dan SQL Dump (.sql).
 
 Dirancang khusus untuk mempermudah tugas pengelola LPSE, PPK, Pokja Pemilihan, Pejabat Pengadaan, Auditor Pengadaan, dan Analis Kebijakan di lingkungan Pemerintah Daerah, Kementerian, dan Lembaga Negara dengan performa tinggi dan konsumsi memori yang sangat efisien (< 50 MB RAM).
 
