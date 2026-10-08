@@ -31,9 +31,7 @@ Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windo
 - **Tabel Peringkat Satker / OPD**: Pemantauan realisasi tiap Perangkat Daerah secara adaptif dengan fitur pencarian instan (live search) dan badge performa.
 
 ### 2. Modul Audit Kepatuhan & Deteksi Risiko PBJ
-- **Mesin Audit Otomatis**: Memeriksa kepatuhan data paket RUP dan pengadaan terhadap ketentuan regulasi terbaru (Perpres 16/2018 jo 12/2021 jo 46/2025 serta Perlem LKPP 11/2021).
-- **Pengaturan Ketentuan Sistem (CRUD Fleksibel)**: Pengguna dapat menambah, mengubah, mengaktifkan, atau menonaktifkan aturan batasan pengadaan (seperti ambang batas Pengadaan Langsung, Penunjukan Langsung, Swakelola, maupun ketentuan kustom instansi).
-- **Deteksi Anomali & Risiko**: Identifikasi potensi pemecahan paket (anti-splitting Pasal 20), anomali HPS, dan potensi deviasi pemilihan penyedia.
+- **Mesin Audit Otomatis**: Memeriksa kepatuhan data paket RUP dan pengadaan terhadap ketentuan yang dapat diatur pada Pengaturan Ketentuan.
 - **Tampilan Spreadsheet Interaktif**: Antarmuka tabel bergaya spreadsheet lengkap dengan header kolom (A-K), formula bar, penanda status risiko (Kritis & Peringatan), serta ekspor laporan hasil audit ke Microsoft Excel (.xlsx).
 
 ### 3. Early Warning System Keterlambatan Tender
@@ -51,10 +49,9 @@ Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windo
 - **Distribusi Penugasan**: Memetakan persebaran paket yang ditangani oleh Pokja Pemilihan maupun Pejabat Pengadaan.
 - **Pengukuran Kapasitas Kerja**: Menganalisis jumlah paket aktif, akumulasi nilai pagu yang dikelola, dan status penyelesaian paket untuk pemerataan beban kerja organisasi pengadaan.
 
-### 6. Asisten AI Pengadaan (Local RAG Copilot)
+### 6. Asisten AI Pengadaan (Local RAG)
 - **Integrasi Google Gemini AI (BYOK)**: Mendukung penggunaan API Key pribadi pengguna (model Gemini Flash) dengan akses kuota gratis harian.
 - **Arsitektur Local RAG Efisien**: Mengambil konteks data relevan dari database lokal sebelum mengirimkan pertanyaan ke AI, menghemat konsumsi token hingga lebih dari 95% dan menghasilkan jawaban dalam hitungan detik.
-- **Inspeksi 1-Klik**: Tombol analisis AI langsung dari baris tabel audit untuk memperoleh diagnosa risiko dan rekomendasi langkah tindak lanjut.
 
 ### 7. Ekspor Multi-Format Cepat (In-Memory Streaming)
 - **Microsoft Excel (.xlsx)**: Pembuatan berkas langsung di memori dengan fitur auto-fit lebar kolom, format angka akuntansi, dan auto-filter.
@@ -72,9 +69,6 @@ Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windo
 - **Zero Third-Party Telemetry**: Aplikasi tidak mengirimkan token, konfigurasi, maupun isi laporan ke server pengembang atau pihak ketiga. Seluruh komunikasi data berlangsung langsung antara komputer pengguna dan Gateway resmi LKPP (`https://data.inaproc.id`).
 - **Database Lokal SQLite**: Seluruh kredensial, cache analitik, riwayat ekspor, dan aturan kepatuhan tersimpan aman di penyimpanan lokal pengguna.
 - **Native Rust HTTP Engine**: Menggunakan engine native Rust untuk koneksi HTTPS yang stabil tanpa kendala CORS.
-
-### 10. Dukungan Apresiasi Pengembang
-- Modal dukungan terintegrasi dengan opsi pembayaran standar nasional QRIS (dapat di-scan melalui aplikasi mobile banking atau e-wallet manapun) serta transfer saldo e-wallet (OVO, DANA, ShopeePay) dengan fitur salin nomor otomatis.
 
 ---
 
