@@ -39,33 +39,48 @@ Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windo
 - **Peringatan Dini Keterlambatan**: Menandai paket yang telah melewati bulan rencana pemilihan namun belum ditenderkan untuk memitigasi risiko gagal lelang atau putus kontrak akhir tahun anggaran.
 - **Bahan Evaluasi Pimpinan**: Memudahkan penyusunan bahan laporan rapat evaluasi pembangunan dan pengadaan (Tepra / Pimpinan Daerah).
 
-### 4. Modul Statistik Moner (Monev SiRUP LKPP)
+### 4. Kalkulator ITKP (Indikator A - Pemanfaatan Sistem Pengadaan)
+- **Perhitungan Standar ITKP LKPP**: Perhitungan mandiri dan simulasi capaian Indeks Tata Kelola Pengadaan (ITKP) Indikator A dengan total bobot 30 Poin.
+- **Pilar A1 – Rencana Pengadaan (SiRUP - 10.0 Poin)**:
+  - **A1.1 Pengumuman RUP** (Maks 5.0 Poin, Target minimal ≥ 90%): Rasio rencana pengadaan terumumkan di SiRUP terhadap total belanja pengadaan.
+  - **A1.2 RUP Penyedia** (Maks 2.5 Poin, Target minimal ≥ 60%): Proporsi rencana belanja pengadaan yang dilaksanakan melalui penyedia barang/jasa.
+  - **A1.3 RUP Tender/Purchasing** (Maks 2.5 Poin, Target minimal ≥ 40%): Rencana paket melalui metode modern (e-Tendering + e-Purchasing) dari total RUP Penyedia.
+- **Pilar A2 – Realisasi Pengadaan (SPSE & E-Katalog - 20.0 Poin)**:
+  - **A2.1 Realisasi e-Tendering & e-Purchasing** (Maks 10.0 Poin, Target minimal ≥ 80%): Realisasi transaksi tender kompetitif SPSE dan e-purchasing pada katalog elektronik.
+  - **A2.2 Pengadaan Langsung Transaksional** (Maks 2.5 Poin, Target minimal ≥ 80%): Kepatuhan pelaksanaan Pengadaan Langsung secara transaksional di aplikasi SPSE.
+  - **A2.3 Penunjukan Langsung Transaksional** (Maks 2.5 Poin, Target minimal ≥ 80%): Kepatuhan pelaksanaan Penunjukan Langsung secara transaksional di aplikasi SPSE.
+  - **A2.4 Digitalisasi PBJ** (Maks 5.0 Poin, Target minimal ≥ 80%): Realisasi pencatatan non-tender, swakelola, serta pencatatan kontrak elektronik di SPSE.
+- **Monitoring Afirmasi Kebijakan Belanja (Inpres 2/2022 & MCP KPK)**: Pemantauan real-time alokasi Produk Dalam Negeri (PDN ≥ 40%) dan alokasi Usaha Mikro, Kecil, dan Koperasi (UMKK ≥ 40% dari paket eligible ≤ Rp 15 Miliar).
+- **Tabel Peringkat & Rekapitulasi per OPD**: Komparasi capaian skor seluruh Perangkat Daerah/Satker secara detail, penentuan predikat capaian, serta ekspor rekapitulasi ke Microsoft Excel (.xlsx).
+
+### 5. Modul Statistik Moner (Monev SiRUP LKPP)
 - **Monitoring & Evaluasi Per Program**: Rekapitulasi progres RUP per Program, Kegiatan, dan Satuan Kerja berbasis integrasi struktur Moner SiRUP.
 - **Pemetaan Pagu & Keterisian**: Analisis Pagu Program, Pagu Pengadaan, Pagu Terumumkan, selisih anggaran, dan rasio ketercapaian.
 - **Penyesuaian Pagu Tagging SiRUP**: Form input nilai Pagu Pengadaan Hasil Tagging SiRUP yang dilengkapi pemisah ribuan otomatis (titik) serta proteksi penyimpanan data lokal agar tidak hilang saat data dimuat ulang.
 - **Pengelompokan Visual Rapi**: Pengelompokan data per OPD dengan header ringkasan yang jelas dan hasil ekspor Excel tabular siap olah.
 
-### 5. Analisis Beban Kerja Personel Pengadaan (Workload Matrix)
-- **Distribusi Penugasan**: Memetakan persebaran paket yang ditangani oleh Pokja Pemilihan maupun Pejabat Pengadaan.
-- **Pengukuran Kapasitas Kerja**: Menganalisis jumlah paket aktif, akumulasi nilai pagu yang dikelola, dan status penyelesaian paket untuk pemerataan beban kerja organisasi pengadaan.
+### 6. Analisis Beban Kerja Personel Pengadaan (Workload Matrix)
+- **Distribusi Penugasan**: Memetakan persebaran paket yang ditangani oleh Pokja Pemilihan (Tender & Seleksi) dan Pejabat Pengadaan (Pengadaan Langsung SPSE).
+- **Pengukuran Kapasitas Kerja**: Menganalisis jumlah paket aktif, akumulasi nilai HPS/pagu yang dikelola, dan OPD asal untuk pemerataan beban kerja organisasi pengadaan.
+- **Ekspor Laporan**: Mendukung ekspor daftar distribusi beban kerja ke Microsoft Excel (.xlsx).
 
-### 6. Asisten AI Pengadaan (Local RAG)
+### 7. Asisten AI Pengadaan (Local RAG)
 - **Integrasi Google Gemini AI (BYOK)**: Mendukung penggunaan API Key pribadi pengguna (model Gemini Flash) dengan akses kuota gratis harian.
 - **Arsitektur Local RAG Efisien**: Mengambil konteks data relevan dari database lokal sebelum mengirimkan pertanyaan ke AI, menghemat konsumsi token hingga lebih dari 95% dan menghasilkan jawaban dalam hitungan detik.
 
-### 7. Ekspor Multi-Format Cepat (In-Memory Streaming)
+### 8. Ekspor Multi-Format Cepat (In-Memory Streaming)
 - **Microsoft Excel (.xlsx)**: Pembuatan berkas langsung di memori dengan fitur auto-fit lebar kolom, format angka akuntansi, dan auto-filter.
 - **Comma-Separated Values (.csv)**: Dilengkapi UTF-8 Byte Order Mark (BOM) sehingga karakter teks bahasa Indonesia langsung rapi saat dibuka di Microsoft Excel.
 - **JavaScript Object Notation (.json)**: Struktur data rapi (pretty-printed) siap pakai untuk integrasi API dan sistem lain.
 - **SQL Dump (.sql)**: Menghasilkan skrip DDL `CREATE TABLE IF NOT EXISTS` dan perintah `INSERT INTO` batch yang kompatibel dengan SQLite, MySQL, dan PostgreSQL.
 - **Cakupan 33+ Endpoint API**: Mendukung seluruh endpoint resmi INAPROC (Tender, Non-Tender, e-Kontrak, RUP, E-Purchasing V6, Katalog, E-Katalog Arsip).
 
-### 8. Sistem Pembaruan In-App (Auto-Updater)
+### 9. Sistem Pembaruan In-App (Auto-Updater)
 - **Pemeriksaan Otomatis**: Mendeteksi rilis versi terbaru langsung dari repositori GitHub resmi.
 - **Unduh Langsung di Aplikasi**: Tombol pembaruan langsung mengunduh berkas installer di dalam aplikasi lengkap dengan progress bar real-time.
 - **Pemasangan Mandiri**: Installer otomatis dijalankan setelah proses unduh selesai untuk transisi versi yang mulus.
 
-### 9. Keamanan, Privasi & Penyimpanan Lokal
+### 10. Keamanan, Privasi & Penyimpanan Lokal
 - **Zero Third-Party Telemetry**: Aplikasi tidak mengirimkan token, konfigurasi, maupun isi laporan ke server pengembang atau pihak ketiga. Seluruh komunikasi data berlangsung langsung antara komputer pengguna dan Gateway resmi LKPP (`https://data.inaproc.id`).
 - **Database Lokal SQLite**: Seluruh kredensial, cache analitik, riwayat ekspor, dan aturan kepatuhan tersimpan aman di penyimpanan lokal pengguna.
 - **Native Rust HTTP Engine**: Menggunakan engine native Rust untuk koneksi HTTPS yang stabil tanpa kendala CORS.
