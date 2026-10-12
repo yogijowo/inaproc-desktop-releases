@@ -8,21 +8,21 @@ Dirancang khusus untuk mempermudah tugas pengelola LPSE, PPK, Pokja Pemilihan, P
 
 ---
 
-## Unduhan Rilis Resmi (Versi 1.0.0)
+## Unduhan Rilis Resmi (Versi 1.1.2)
 
 Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windows (64-bit):
 
 | Nama Berkas | Tipe Paket | Keterangan | Tautan Unduhan Langsung |
 | :--- | :--- | :--- | :--- |
-| **INAPROC.Exporter_1.0.0_x64-setup.exe** | Installer Wizard *(Direkomendasikan)* | Instalasi resmi dengan shortcut desktop & uninstaller | [Unduh Installer](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v1.0.0/INAPROC.Exporter_1.0.0_x64-setup.exe) |
-| **INAPROC.Exporter_1.0.0_x64.msi** | Windows MSI Installer | Paket instalasi standar korporat Windows MSI | [Unduh MSI](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v1.0.0/INAPROC.Exporter_1.0.0_x64.msi) |
-| **INAPROC.Exporter.exe** | Standalone Portable | Berkas portabel mandiri, langsung jalankan tanpa instalasi | [Unduh Portable](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v1.0.0/INAPROC.Exporter.exe) |
+| **INAPROC.Exporter_1.1.2_x64-setup.exe** | Installer Wizard *(Direkomendasikan)* | Instalasi resmi dengan shortcut desktop & uninstaller | [Unduh Installer](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v1.1.2/INAPROC.Exporter_1.1.2_x64-setup.exe) |
+| **INAPROC.Exporter_1.1.2_x64.msi** | Windows MSI Installer | Paket instalasi standar korporat Windows MSI | [Unduh MSI](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v1.1.2/INAPROC.Exporter_1.1.2_x64.msi) |
+| **INAPROC.Exporter.exe** | Standalone Portable | Berkas portabel mandiri, langsung jalankan tanpa instalasi | [Unduh Portable](https://github.com/yogijowo/inaproc-desktop-releases/releases/download/v1.1.2/INAPROC.Exporter.exe) |
 
 > Seluruh riwayat pembaruan dan rilis sebelumnya dapat dilihat melalui halaman [GitHub Releases](https://github.com/yogijowo/inaproc-desktop-releases/releases).
 
 ---
 
-## Ringkasan Fitur Lengkap Versi 1.0.0
+## Ringkasan Fitur Lengkap Versi 1.1.2
 
 ### 1. Dashboard Analitik & Statistik Real-Time
 - **Analitik Perencanaan vs Realisasi**: Menyajikan metrik Belanja Pengadaan, Total RUP, Persentase Pengisian RUP, Komposisi Penyedia vs Swakelola, Produk Dalam Negeri (PDN), dan Usaha Mikro Kecil Koperasi (UMKK).
@@ -93,7 +93,7 @@ Berkas eksekusi resmi tersedia dalam dua varian paket untuk sistem operasi Windo
 
 Paket installer menyediakan integrasi penuh ke dalam sistem Windows, termasuk shortcut di Desktop dan Start Menu serta uninstaller resmi.
 
-1. Unduh berkas `INAPROC.Exporter_1.0.0_x64-setup.exe` melalui tautan di atas.
+1. Unduh berkas `INAPROC.Exporter_1.1.2_x64-setup.exe` melalui tautan di atas.
 2. Klik ganda berkas installer yang telah diunduh.
 3. Apabila muncul notifikasi keamanan Windows SmartScreen:
    - Klik teks **More info** atau **Info selengkapnya**.
